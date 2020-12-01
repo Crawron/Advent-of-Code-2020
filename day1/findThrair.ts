@@ -16,7 +16,7 @@ for (let i = 0; i < nums.length && !result; i++) {
 			const match = a + b + c === 2020
 			if (match) {
 				result = a * b * c
-				console.log({ match, result, a, b, c })
+				console.log({ result, a, b, c })
 			}
 		}
 	}
