@@ -23,10 +23,10 @@ const slopes: [number, number][] = [
 	[1, 2],
 ]
 
-let result: number | undefined = undefined
+let result = 1
 for (const slope of slopes) {
 	const count = countTrees(...slope)
-	result = count * (result ?? 1)
+	result = count * result
 	console.log({ slope, count })
 }
 
