@@ -1,5 +1,5 @@
-export function getInput(day: number) {
-	return Deno.readTextFileSync(`./day${day}/input`)
+export function getInput(day: number, filename = "input") {
+	return Deno.readTextFileSync(`./day${day}/${filename}`)
 }
 
 export async function fetchInput(day: number) {
